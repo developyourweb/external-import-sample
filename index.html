@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- This area imports external CSS files -->
+<script>
+	//creating link insert of css file (successfull)
+var fileref = document.createElement("link"); fileref.rel = "stylesheet"; fileref.type = "text/css"; fileref.href = "https://supportforweb.us/member-services/external/test.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
+<script>
+	//creating second insert for css file 2 (Successfull)
+	var nextfile = document.createElement("link"); nextfile.rel = "stylesheet"; nextfile.type = "text/css"; nextfile.href = "https://supportforweb.us/member-services/external/test2.css";
+document.getElementsByTagName("head")[0].appendChild(nextfile)
+</script>
+<!-- This is where we pull in javascript(js) files -->
+<script>
+	
+</script>
+</head>
+
+<body>
+<div class="test">
+<p>Test 1</p>
+</div>
+<div class="test2">
+	<p>Test 2</p>
+</div>
+
+
+</body>
+</html>
